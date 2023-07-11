@@ -112,6 +112,8 @@
     {/each}
   </section>
 
+  <hr />
+
   <section
     class="add-dice"
     class:flex-align-right={!options.reverseAddDiceButtons && options.alignAddDiceButtons === 'right' || options.reverseAddDiceButtons && options.alignAddDiceButtons === 'left'}
@@ -141,7 +143,7 @@
     padding: 0.5rem;
     display: flex;
     flex-direction: column;
-    row-gap: 12pt;
+    row-gap: 1rem;
   }
 
   .app {
@@ -149,28 +151,29 @@
     min-height: 100vh;
     padding: 0.5rem;
     display: grid;
-    grid-template-rows: auto 1fr auto auto;
+    grid-template-rows: auto 1fr auto auto auto;
     row-gap: 1rem;
+    align-items: start;
   }
 
   button {
-    min-width: 44pt;
-    min-height: 44pt;
+    min-width: 3.65rem;
+    min-height: 3.65rem;
   }
-  .die .remove {
+  .remove {
     min-width: auto;
   }
 
   .results {
     display: flex;
-    column-gap: 0.5em;
+    column-gap: 0.5rem;
     justify-content: center;
   }
 
   .dice {
     display: flex;
     flex-wrap: wrap;
-    gap: 4pt;
+    gap: 0.5rem;
   }
 
   .flex-align-right {
@@ -183,17 +186,15 @@
   .add-dice {
     display: flex;
     flex-wrap: wrap;
-    /* justify-content: flex-end; */
-    gap: 4pt;
+    gap: 0.5rem;
   }
 
   .controls {
     display: flex;
-    /* flex-direction: row-reverse; */
-    gap: 4pt;
+    gap: 0.5rem;
   }
 
   .controls .options {
-    font-size: 28pt;
+    font-size: 2em;
   }
 </style>
